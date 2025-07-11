@@ -1,3 +1,4 @@
+import UserList from './APIcalling/UserList';
 import './App.css';
 import Main from './Hooks/UseEffect/Main';
 import Count from './Hooks/UseState/Count';
@@ -9,7 +10,8 @@ function App() {
       {/* useState */}
       {/* <Count /> */}
 
-      <Main />
+      {/* <Main /> */}
+      <UserList />
     </div>
   );
 }
