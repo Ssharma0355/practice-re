@@ -2,7 +2,9 @@ import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
 import Parent from './Hooks/ContextAPI/Parent';
+import MainFile from './Hooks/sampleContextApi/MainFile';
 import Main from './Hooks/UseEffect/Main';
+import Reducer from './Hooks/UseReducer/Reducer';
 import Count from './Hooks/UseState/Count';
 
 
@@ -17,6 +19,10 @@ function App() {
       <AddPost /> */}
 
       {/* <Parent /> */}
+
+      {/* <MainFile /> */}
+
+      <Reducer />
     </div>
   );
 }
