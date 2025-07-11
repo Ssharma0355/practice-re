@@ -1,3 +1,4 @@
+import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
 import Main from './Hooks/UseEffect/Main';
@@ -12,6 +13,7 @@ function App() {
 
       {/* <Main /> */}
       <UserList />
+      <AddPost />
     </div>
   );
 }
