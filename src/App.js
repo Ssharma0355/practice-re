@@ -1,5 +1,7 @@
+import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
+import Parent from './Hooks/ContextAPI/Parent';
 import Main from './Hooks/UseEffect/Main';
 import Count from './Hooks/UseState/Count';
 
@@ -11,7 +13,10 @@ function App() {
       {/* <Count /> */}
 
       {/* <Main /> */}
-      <UserList />
+      {/* <UserList />
+      <AddPost /> */}
+
+      <Parent />
     </div>
   );
 }
