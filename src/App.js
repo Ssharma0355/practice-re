@@ -4,6 +4,7 @@ import './App.css';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
 import Main from './Hooks/UseEffect/Main';
+import Memo from './Hooks/UseMemo/Memo';
 import Reducer from './Hooks/UseReducer/Reducer';
 import Count from './Hooks/UseState/Count';
 
@@ -22,7 +23,9 @@ function App() {
 
       {/* <MainFile /> */}
 
-      <Reducer />
+      {/* <Reducer /> */}
+
+      <Memo />
     </div>
   );
 }
