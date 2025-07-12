@@ -1,6 +1,7 @@
 import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
+import SplitingMain from './CodeSpliting/SplitingMain';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
 import Callback from './Hooks/UseCallback/Callback';
@@ -10,6 +11,7 @@ import Memo from './Hooks/UseMemo/Memo';
 import Reducer from './Hooks/UseReducer/Reducer';
 import RefHook from './Hooks/UseRef/RefHook';
 import Refsecond from './Hooks/UseRef/Refsecond';
+import StopWatchRef from './Hooks/UseRef/StopWatchRef';
 import Count from './Hooks/UseState/Count';
 
 
@@ -38,7 +40,11 @@ function App() {
 
       {/* <RefHook /> */}
 
-      <Refsecond />
+      {/* <Refsecond /> */}
+
+      {/* <StopWatchRef /> */}
+
+      <SplitingMain />
     </div>
   );
 }
