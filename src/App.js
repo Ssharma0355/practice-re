@@ -2,6 +2,7 @@ import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
 import SplitingMain from './CodeSpliting/SplitingMain';
+import SeachBar from './DebounceHOCAPI/SeachBar';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
 import Callback from './Hooks/UseCallback/Callback';
@@ -44,7 +45,12 @@ function App() {
 
       {/* <StopWatchRef /> */}
 
-      <SplitingMain />
+      {/* <SplitingMain /> */}
+
+      {/* Debouncing and High order component */}
+
+
+      <SeachBar />
     </div>
   );
 }
