@@ -13,12 +13,10 @@ const Memo = () => {
     <div>
         <h1>{count}</h1>
         <button onClick={()=>setCount(count+1)}>+</button>
-
         <div>
             <h2>{doubleResult}</h2>
             <input type="number" value={number} onChange={(e)=>setNumber(e.target.value)} />
         </div>
-      
     </div>
   )
 }
