@@ -1,6 +1,7 @@
 import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
+import SplitingMain from './CodeSpliting/SplitingMain';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
 import Callback from './Hooks/UseCallback/Callback';
@@ -41,7 +42,9 @@ function App() {
 
       {/* <Refsecond /> */}
 
-      <StopWatchRef />
+      {/* <StopWatchRef /> */}
+
+      <SplitingMain />
     </div>
   );
 }
