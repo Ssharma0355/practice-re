@@ -3,6 +3,7 @@ import UserList from './APIcalling/UserList';
 import './App.css';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
+import Callback from './Hooks/UseCallback/Callback';
 import Main from './Hooks/UseEffect/Main';
 import Memo from './Hooks/UseMemo/Memo';
 import Reducer from './Hooks/UseReducer/Reducer';
@@ -25,7 +26,9 @@ function App() {
 
       {/* <Reducer /> */}
 
-      <Memo />
+      {/* <Memo /> */}
+
+      <Callback />
     </div>
   );
 }
