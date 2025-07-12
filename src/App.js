@@ -9,6 +9,7 @@ import Main from './Hooks/UseEffect/Main';
 import Memo from './Hooks/UseMemo/Memo';
 import Reducer from './Hooks/UseReducer/Reducer';
 import RefHook from './Hooks/UseRef/RefHook';
+import Refsecond from './Hooks/UseRef/Refsecond';
 import Count from './Hooks/UseState/Count';
 
 
@@ -35,7 +36,9 @@ function App() {
 
       {/* <SecondCallback /> */}
 
-      <RefHook />
+      {/* <RefHook /> */}
+
+      <Refsecond />
     </div>
   );
 }
