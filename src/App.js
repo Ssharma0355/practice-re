@@ -3,6 +3,7 @@ import UserList from './APIcalling/UserList';
 import './App.css';
 import SplitingMain from './CodeSpliting/SplitingMain';
 import SeachBar from './DebounceHOCAPI/SeachBar';
+import SearchWithDebounce from './DebounceHOCAPI/SearchWithDebounce';
 import Parent from './Hooks/ContextAPI/Parent';
 import MainFile from './Hooks/sampleContextApi/MainFile';
 import Callback from './Hooks/UseCallback/Callback';
@@ -50,7 +51,10 @@ function App() {
       {/* Debouncing and High order component */}
 
 
-      <SeachBar />
+      {/* <SeachBar /> */}
+
+      {/* with debounec  */}
+      <SearchWithDebounce />
     </div>
   );
 }
