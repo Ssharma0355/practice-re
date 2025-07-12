@@ -7,7 +7,6 @@ const StopWatchRef = () => {
        timeRef.current = setInterval(()=>{
          setTime(prevTime => prevTime+1);
         },1000)
-
     }
     const stop = () => {
         clearInterval(timeRef.current);
