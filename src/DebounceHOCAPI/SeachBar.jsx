@@ -4,9 +4,9 @@ const SeachBar = () => {
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
     const fetchData = async ()=>{
-        const data = await fetch(`https://dummyjson.com/recipes/search?q=`)
+        const data = await fetch(`https://dummyjson.com/recipes/search?q=${input}`)
         const json = await data.json();
-        setResults(json.recipes);
+        setResults(json?.recipes);
     }
 
     useEffect(()=>{
