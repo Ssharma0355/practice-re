@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react'
 const SeachBar = () => {
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
+    const [showResults, setShowResults] = useState(false)
     const fetchData = async ()=>{
-        const data = await fetch(`https://dummyjson.com/recipes/search?q=`)
+        const data = await fetch(`https://dummyjson.com/recipes/search?q=${input}`)
         const json = await data.json();
-        setResults(json.recipes);
+        setResults(json?.recipes);
     }
 
     useEffect(()=>{
@@ -15,11 +16,13 @@ const SeachBar = () => {
     console.log(results)
   return (
     <div>
-        <h1>Autocomplete Searchbar</h1>
-        <input type="text" value={input} onChange={(e)=>setInput(e.target.value)}/>
-        <div>
+        <h1>Autocomplete Searchbar </h1>
+        <p>Results found : {results.length}</p>
+        <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} onFocus={()=>setShowResults(!showResults)}/>
+          {showResults ? (<div>
               {results.length > 0 && results.map((result) => (<span className='list' key={result.id}>{result.name}</span>))}
-        </div>
+          </div>):""}
+       
     </div>
   )
 }
