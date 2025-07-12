@@ -9,7 +9,6 @@ const SeachBar = () => {
         const json = await data.json();
         setResults(json?.recipes);
     }
-
     useEffect(()=>{
         fetchData();
     },[input])
@@ -22,7 +21,6 @@ const SeachBar = () => {
           {showResults ? (<div>
               {results.length > 0 && results.map((result) => (<span className='list' key={result.id}>{result.name}</span>))}
           </div>):""}
-       
     </div>
   )
 }
