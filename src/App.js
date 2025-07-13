@@ -2,6 +2,7 @@ import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
 import './App.css';
 import SplitingMain from './CodeSpliting/SplitingMain';
+import PreacticeDebounce from './DebounceHOCAPI/PreacticeDebounce';
 import SeachBar from './DebounceHOCAPI/SeachBar';
 import SearchWithDebounce from './DebounceHOCAPI/SearchWithDebounce';
 import Parent from './Hooks/ContextAPI/Parent';
@@ -54,7 +55,8 @@ function App() {
       {/* <SeachBar /> */}
 
       {/* with debounec  */}
-      <SearchWithDebounce />
+      {/* <SearchWithDebounce /> */}
+      <PreacticeDebounce />
     </div>
   );
 }
