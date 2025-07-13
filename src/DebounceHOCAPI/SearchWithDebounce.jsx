@@ -6,17 +6,23 @@ const SearchWithDebounce = () => {
 
     //calling api
     const getRecipies = async ()=>{
-        const data = await fetch(`https://dummyjson.com/recipes/search?q=${input}`)
+        console.log("API calls",input)
+        const data = await fetch("https://dummyjson.com/recipes/search?q="+input)
         const json = await data.json();
         setResult(json.recipes);
     }
 
-    // mounting
+    // mounting with debouncing feature 
     useEffect(()=>{
-        getRecipies();
+        const timer = setTimeout(getRecipies, 300);
+
+        return function(){
+            clearTimeout(timer)
+        }
+      
     },[input])
 
-    console.log(result)
+    // console.log(result)
   return (
     <div>
           <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} />
