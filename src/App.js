@@ -1,5 +1,6 @@
 import AddPost from './APIcalling/AddPost';
 import UserList from './APIcalling/UserList';
+import UsersLocal from './APIcalling/UsersLocal';
 import './App.css';
 import SplitingMain from './CodeSpliting/SplitingMain';
 import PreacticeDebounce from './DebounceHOCAPI/PreacticeDebounce';
@@ -56,7 +57,9 @@ function App() {
 
       {/* with debounec  */}
       {/* <SearchWithDebounce /> */}
-      <PreacticeDebounce />
+      {/* <PreacticeDebounce /> */}
+
+      <UsersLocal />
     </div>
   );
 }
