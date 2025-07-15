@@ -6,7 +6,7 @@ const UsersLocal = () => {
     const [list, setList] = useState([]);
 
     const getLocalData = () => {
-        axios.get("http://localhost:8000/users")
+        axios.get("http://localhost:8000/api/users")
             .then((res) => {
                 setList(res.data);
                 console.log(res.data, "Fetched data");
