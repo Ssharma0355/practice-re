@@ -1,4 +1,6 @@
 import AddPost from './APIcalling/AddPost';
+import APIishere from './APIcalling/APIishere';
+import PostStory from './APIcalling/PostStory';
 import UserList from './APIcalling/UserList';
 import UsersLocal from './APIcalling/UsersLocal';
 import './App.css';
@@ -59,7 +61,10 @@ function App() {
       {/* <SearchWithDebounce /> */}
       {/* <PreacticeDebounce /> */}
 
-      <UsersLocal />
+      {/* <UsersLocal /> */}
+
+      {/* <APIishere /> */}
+      <PostStory />
     </div>
   );
 }
